@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mediapipe Feed</title>
+</head>
+<body>
+    <h1>Mediapipe Feed</h1>
+    <img src="{{ url_for('video_feed') }}" width="640" height="480" alt="Video Stream">
+    <div>
+        <h2>Mediapipe Data</h2>
+        <p>Angle Hands: {{ anglehands }}</p>
+        <p>Angle Legs: {{ anglelegs }}</p>
+        <p>Angle Upper: {{ angleupper }}</p>
+    </div>
+    <div>
+        <h2>Counter Data</h2>
+        <p>Counter Hands: {{ counterhands }}</p>
+        <p>Counter Legs: {{ counterlegs }}</p>
+    </div>
+</body>
+</html>
